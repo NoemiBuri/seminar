@@ -1,4 +1,4 @@
-### 2019-end-member-mixing-model
+# 2019-end-member-mixing-model
 general information
 seminar
 python version
@@ -10,9 +10,9 @@ use of it (really short, more in pdf)
 
 ## Workflow
 
-# 1. import
+### 1. import
 
-# 2. read data from user
+### 2. read data from user
 
 With following code, it is possible to import the data from a csv-file:
 
@@ -26,11 +26,11 @@ c=x[2,:]
 
 p=x[3,:]
 
-# 3. define triangle
+### 3. define triangle
 
-# 4. triangle calculations
+### 4. triangle calculations
 
-# 5. plot
+### 5. plot
 
 ## Output
 
