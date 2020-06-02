@@ -1,8 +1,18 @@
-# End Member Mixing Model
+### 2019-end-member-mixing-model
+general information
+seminar
+python version
+further information: my work and pdf document
 
+## Goal
+what is EMMA
+use of it (really short, more in pdf)
 
-## Seminar work
+## Workflow
 
+# 1. import
+
+# 2. read data from user
 
 With following code, it is possible to import the data from a csv-file:
 
@@ -16,4 +26,11 @@ c=x[2,:]
 
 p=x[3,:]
 
+# 3. define triangle
+
+# 4. triangle calculations
+
+# 5. plot
+
+## Output
 
