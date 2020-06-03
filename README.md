@@ -19,7 +19,7 @@ x und y  information pro komponenten
 a besteht aus ax und ay etc.
 
 
-
+![Screenshot](components.png)
 
 
 If you feel more comfortable to import your data with a csv-file you can use the following code:
