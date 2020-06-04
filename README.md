@@ -13,11 +13,11 @@ The following part describes the workflow of the script.
 ### 1. Import
 Firstly, the packages numpy, math, sympy and matholpot.lib.pyplot are installed.
 ### 2. Read data from user
-In this section the user is asked to specify his data. For each of the three components a two-dimensional vector is created. For the component A the user is asked for Ax and Ay out of which the vector A is built. The same information for the components B and C is asked. Out of this data the corners of the mixing triangle are set. Further the data of the investigated sample on which the mixing calculation is done needs to be declared. The vector of this sample is named P. In *figure 1* you can see a visualization of this step of the project.
+In this section you are asked to specify your data. For each of the three components a two-dimensional vector is created. For the component A you are asked to indicate the elements Ax and Ay of the vector A. The same information for the components B and C is asked. This data sets the corners of the mixing triangle. Furthermore the data of the investigated sample P for which the mixing calculation is done, needs to be declared. In *Figure 1* you can see a visualization of this step of the project.
 
 ![Screenshot](components.png)
 
-*figure 1 : components A, B and C and mixing sample P*
+*Figure 1 : components A, B and C and mixing sample P*
 
 If you feel more comfortable to import your data with a csv-file you can use the following code:
 
@@ -32,13 +32,13 @@ c=x[2,:]
 p=x[3,:]
 
 ### 3. Define triangle
-In this section the mixing triangle gets defined. Therefore, the vector direction and magnitude of the triangle sides are calculated. The vector sides are named AB, BC and CA. For each triangle side the triangle height is assessed. Here as well the vector direction and magnitude are calculated. Whereas the triangle lengths are called ha, hb and hc. The point where the triangle height meets the opposite triangle side is called pha for the component A, phb for the componente B and phc for the component C. The vector direction of the triangle sides are named phaA, phbB and phcC. In *figure 2* you can see this step of the calculations for the component A.
+In this section the mixing triangle is defined. Therefore, the vector direction and magnitude of the triangle sides are calculated. The vector sides are named AB, BC and CA. For each triangle side the triangle height is assessed, for which the vector direction and magnitude are calculated. The triangle lengths are called ha, hb and hc. The point where the triangle height meets the opposite triangle side is called pha for the component A, phb for the componente B and phc for the component C. The vector directions of the triangle sides are named phaA, phbB and phcC. In *Figure 2* you can see this step of the calculation for the component A.
 
 ![Screenshot](define_t.png)
 
-*figure 2 : triangle side ha and point pha*
+*Figure 2 : triangle side ha and point pha*
 
-To calculate the vecotr direction of the triangle sides the following formula is used:
+To calculate the vector direction of the triangle sides the following formula is used:
 
 ![Screenshot](vector_dir.JPG)
 
@@ -46,18 +46,18 @@ To calculate the vector magnitude the following formula is used:
 
 ![Screenshot](vector_amount.JPG)
 
-The calculation of the triangle side magnitude is done by this formula:
+To calculate the triangle side magnitude the following formula is used:
 
 ![Screenshot](ts.JPG)
 
 ### 4. Triangle calculations
-In this part the point of intersection of the triangle heights at right angles to the point P are calculated. This point is called SPA for the component A (see *figure 3*), SPB for the component B and SPC for the component C. The vector reaching from the point P to the point SPA is called SPAP (SPBP for the component B and SPCP for the component C).
-As a next step the distance from the point SPA to the triangle corner A is calculated. Out of this distance and the triangle height a the percent amount of the component A can be assessed. The same is done for the components B and C.
+In this part the points of intersection of the triangle heights at right angles to point P are calculated. This point is called SPA for the component A (see *Figure 3*), SPB for the component B and SPC for the component C. The vector from point P to point SPA is called SPAP (SPBP for the component B and SPCP for the component C).
+As a next step the distance from point SPA to the triangle corner A is calculated. With this distance and the corresponding triangle height the percentage of the component A can be assessed. The same is done for the components B and C.
 
 ![Screenshot](calculations.png)
 
-*figure 3 : point SPA and line SPAP*
+*Figure 3 : point SPA and line SPAP*
 ### 5. Plot
-In the final step of the script the mixing triangle is plotted as visible in *figure 3*. To achieve a proper overview only the calculation of the component A is visualized. If you wish you can easily add the visualisation of the other components by adding phb, phc, SPB and SPC to the plot.
+In the final step of the script the mixing triangle is plotted as shown in *Figure 3*. To achieve a clear overview, only the calculation of the component A is visualized. If you wish you can easily add the visualisation of the other components by adding phb, phc, SPB and SPC to the plot.
 ## Output
-As output of the script you get the visualized mixing triangle as visible in *figure 3*. Here you can check if your investigated sample (point P) lies within the mixing triangle. If this is not the case, you cannot perform the EMMA. If P lies within the triangle you can use the amount of the components A, B and C you get as the result of your EMMA.
+As output of the script you get the visualized mixing triangle as shown in *Figure 3*. Here you can check if your investigated sample (point P) lies within the mixing triangle. If this is not the case, you cannot perform the EMMA. If P lies within the triangle, the percentages of the components A, B and C you get are the result of your EMMA.
