@@ -9,15 +9,15 @@ import matplotlib.pyplot as plt
 ##################################################
 # read data from user
 ##################################################
-Ax = float(input('Input Parameter vor Ax:'))
-Ay = float(input('Input Parameter vor Ay:'))
-Bx = float(input('Input Parameter vor Bx:'))
-By = float(input('Input Parameter vor By:'))
-Cx = float(input('Input Parameter vor Cx:'))
-Cy = float(input('Input Parameter vor Cy:'))
-Px = float(input('Input Parameter vor Px:'))
-Py = float(input('Input Parameter vor Py:'))
-# creat arrays
+Ax = float(input('Input Parameter for Ax:'))
+Ay = float(input('Input Parameter for Ay:'))
+Bx = float(input('Input Parameter for Bx:'))
+By = float(input('Input Parameter for By:'))
+Cx = float(input('Input Parameter for Cx:'))
+Cy = float(input('Input Parameter for Cy:'))
+Px = float(input('Input Parameter for Px:'))
+Py = float(input('Input Parameter for Py:'))
+# create arrays
 a = np.array([Ax,Ay])
 b = np.array([Bx,By])
 c = np.array([Cx,Cy])
@@ -41,21 +41,21 @@ hc = (2/lengthAB) * math.sqrt(s*(s-lengthAB)*(s-lengthBC)*(s-lengthCA))
 ha = (2/lengthBC) * math.sqrt(s*(s-lengthAB)*(s-lengthBC)*(s-lengthCA))
 hb = (2/lengthCA) * math.sqrt(s*(s-lengthAB)*(s-lengthBC)*(s-lengthCA))
 # calculate triangle height - vector direction
-# heigth A:
+# height A:
 t = sy.S('t')
 pha = b+t*BC
 phaA = a - pha
 y = sy.solve( sy.Eq((BC[0]*phaA[0])+(BC[1]*phaA[1]), 0))
 pha = b+y*BC
 phaA= a - pha
-# heigth B:
+# height B:
 t = sy.S('t')
 phb = c+t*CA
 phbB = b - phb
 y = sy.solve( sy.Eq((CA[0]*phbB[0])+(CA[1]*phbB[1]), 0))
 phb = c+y*CA
 phbB= b - phb
-# heigth C:
+# height C:
 t = sy.S('t')
 phc = a+t*AB
 phcC = c - phc
@@ -66,7 +66,7 @@ phcC= c - phc
 ######################################################
 ## triangle calculations
 ######################################################
-# calculate point of intersection of triangle heigth at rigth angles to P
+# calculate point of intersection of triangle height at right angles to P
 # point of intersection SPA:
 t = sy.S('t')
 SPA = pha+t*phaA
@@ -89,7 +89,7 @@ y = sy.solve( sy.Eq((phcC[0]*SPCP[0])+(phcC[1]*SPCP[1]), 0))
 SPC = phc+y*phcC
 SPCP= p - SPC
 
-# calculate distance point of intersection to triangle corner
+# calculate distance from point of intersection to triangle corner
 # distance to A:
 SPAA= a - SPA
 lengthSPAA=math.sqrt(SPAA[0]**2+SPAA[1]**2)
@@ -100,28 +100,28 @@ lengthSPBB=math.sqrt(SPBB[0]**2+SPBB[1]**2)
 SPCC= c - SPC
 lengthSPCC=math.sqrt(SPCC[0]**2+SPCC[1]**2)
 
-# percental amout of components
+# percentages of components
 # A:
 phaSPA = SPA- pha
 lengthphaSPA=math.sqrt(phaSPA[0]**2+phaSPA[1]**2)
 z = 100/ha*lengthphaSPA
-print('amount of component A',z)
+print('percentage of component A',z)
 # B:
 phbSPB = SPB- phb
 lengthphbSPB=math.sqrt(phbSPB[0]**2+phbSPB[1]**2)
 k = 100/ha*lengthphbSPB
-print('amount of component B', k)
+print('percentage of component B', k)
 # C:
 phcSPC = SPC- phc
 lengthphcSPC=math.sqrt(phcSPC[0]**2+phcSPC[1]**2)
 q = 100/ha*lengthphcSPC
-print('amount of component C', q)
+print('percentage of component C', q)
 
 #####################################################
 ## Plot
 #####################################################
 # mixing triangle with graphic representation of the calculation
-# of the amount of component A
+# of the percentage of component A
 fig, ax1 = plt.subplots()
 # corners
 plt.plot(a[0], a[1], marker='.', color='black')
@@ -143,12 +143,12 @@ plt.plot([c[0],a[0]],[c[1],a[1]], color='black')
 # point of intersection  pha:
 plt.plot(pha[0],pha[1], marker='x', color='blue')
 ax1.text(pha[0], pha[1], 'pha',ha='right', color='blue')
-# heigth A (phaA):
+# height A (phaA):
 plt.plot([pha[0],a[0]],[pha[1],a[1]], label='ha')
 # point of intersection SPA:
 plt.plot(SPA[0],SPA[1], marker='x', color='blue')
 ax1.text(SPA[0], SPA[1], 'SPA',ha='right', color='blue')
-# point of intersection of triangle heigth at rigth angels to P (SPAP):
+# point of intersection of triangle height at right angles to P (SPAP):
 plt.plot([SPA[0],p[0]],[SPA[1],p[1]])
 # formatting
 plt.ylabel('y-axis')
