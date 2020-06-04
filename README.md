@@ -38,6 +38,10 @@ In this section the mixing triangle gets defined. Therefore, the vector directio
 
 *figure 2 : triangle side ha and point pha*
 
+To calculate the vecotr direction of the triangle sides the following formula is used:
+
+![Screenshot](vector_dir.JPG)
+
 To calculate the vector magnitude the following formula is used:
 
 ![Screenshot](vector_amount.JPG)
