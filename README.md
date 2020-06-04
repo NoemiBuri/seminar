@@ -14,7 +14,6 @@ In the following part the workflow of the script is described.
 Firstly, the packages numpy, math, sympy and matholpot.lib.pyplot are installed.
 ### 2. Read data from user
 In this secttion the user is getting asked for his import data. For each of the three components a two-dimensional vector is created. For the component A the user is asked for Ax and Ay out of which the vector A is built. The same information for the components B and C is asked. Out of this data the corners of the mixing triangle are set. Further the data of the investigated sample on which the mixing calculation is done needs to be declared. The vector of this sample is named P. In *figure 1* you can see a visualization of this step of the project.
-![Screenshot](vector_amount.JPG)
 
 ![Screenshot](components.png)
 
@@ -38,6 +37,10 @@ In this section the mixing triangle gets defined. Therefore, the vector directio
 ![Screenshot](define_t.png)
 
 *figure 2 : triangle side ha and point pha*
+
+To calculate the vector magnitude the following formula is used:
+![Screenshot](vector_amount.JPG)
+
 ### 4. Triangle calculations
 In this part the point of intersection of the triangle heights at right angles to the point P are calculated. This point is called SPA for the component A (see *figure 3*), SPB for the component B and SPC for the component C. The vector reaching from the point P to the point SPA is called SPAP (SPBP for the component B and SPCP for the component C).
 As a next step the distance from the point SPA to the triangle corner A is calculated. Out of this distance and the triangle height a the percent amount of the component A can be assessed. The same is done for the components B and C.
