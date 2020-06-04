@@ -46,6 +46,10 @@ To calculate the vector magnitude the following formula is used:
 
 ![Screenshot](vector_amount.JPG)
 
+The calculation of the triangle side magnitude is done by this formula:
+
+![Screenshot](ts.JPG)
+
 ### 4. Triangle calculations
 In this part the point of intersection of the triangle heights at right angles to the point P are calculated. This point is called SPA for the component A (see *figure 3*), SPB for the component B and SPC for the component C. The vector reaching from the point P to the point SPA is called SPAP (SPBP for the component B and SPCP for the component C).
 As a next step the distance from the point SPA to the triangle corner A is calculated. Out of this distance and the triangle height a the percent amount of the component A can be assessed. The same is done for the components B and C.
