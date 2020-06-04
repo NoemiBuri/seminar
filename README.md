@@ -14,6 +14,7 @@ In the following part the workflow of the script is described.
 Firstly, the packages numpy, math, sympy and matholpot.lib.pyplot are installed.
 ### 2. Read data from user
 In this secttion the user is getting asked for his import data. For each of the three components a two-dimensional vector is created. For the component A the user is asked for Ax and Ay out of which the vector A is built. The same information for the components B and C is asked. Out of this data the corners of the mixing triangle are set. Further the data of the investigated sample on which the mixing calculation is done needs to be declared. The vector of this sample is named P. In *figure 1* you can see a visualization of this step of the project.
+![Screenshot](vector_amount.jpeg)
 
 ![Screenshot](components.png)
 
