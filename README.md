@@ -1,6 +1,6 @@
 # 2019-end-member-mixing-analyis
 ### Python 3.7.2, JetBrains PyCharm Community Edition 2018.3.5
-This python project is part of the master thesis “Abflussseparation mittels stabiler Isotopen – Bestim-mung der Wasserherkunft nach Regen, Schnee- und Gletscherschmelze in drei alpinen Einzugsge-bieten” (hydrological separation with stable isotopes – determination of the water origin regarding rain, glacier and snowmelt in three alpine catchments). The master thesis is embedded in a research project of the hydropower company Kraftwerke Oberhasli AG (KWO) and the University of Bern. 
+This python project is part of the master thesis “Abflussseparation mittels stabiler Isotopen – Bestimmung der Wasserherkunft nach Regen, Schnee- und Gletscherschmelze in drei alpinen Einzugsge-bieten” (hydrological separation with stable isotopes – determination of the water origin regarding rain, glacier and snowmelt in three alpine catchments). The master thesis is embedded in a research project of the hydropower company Kraftwerke Oberhasli AG (KWO) and the University of Bern. 
 Further information about the background of the project is available in the **Report_ EMMA.pdf**.
 
 Author: Noemi Buri, noemi.buri@students.unibe.ch, University of Bern, Seminar Geodata Analysis and Modelling 2019
@@ -70,6 +70,8 @@ As a next step the distance from point SPA to the triangle corner A is calculate
 ![Screenshot](calculations.png)
 
 *Figure 3 : point SPA and line SPAP*
+
+The calculations are perfomed consistent with the formulas shown in section 3.
 ### 5. Plot
 In the final step of the script the mixing triangle is plotted as shown in *Figure 3*. To achieve a clear overview, only the calculation of the component A is visualized. If you wish you can easily add the visualisation of the other components by adding phb, phc, SPB and SPC to the plot.
 ## Output
