@@ -50,6 +50,19 @@ To calculate the triangle side magnitude the following formula is used:
 
 ![Screenshot](ts.JPG)
 
+
+To calculate the triangle side direction, in the following scalar equation
+
+![Screenshot](h1.JPG)
+
+phaA is replaced with the straight line equation, giving following equation:
+
+![Screenshot](h2.JPG)
+
+whereby the straight line equation is:
+
+![Screenshot](h3.JPG)
+
 ### 4. Triangle calculations
 In this part the points of intersection of the triangle heights at right angles to point P are calculated. This point is called SPA for the component A (see *Figure 3*), SPB for the component B and SPC for the component C. The vector from point P to point SPA is called SPAP (SPBP for the component B and SPCP for the component C).
 As a next step the distance from point SPA to the triangle corner A is calculated. With this distance and the corresponding triangle height the percentage of the component A can be assessed. The same is done for the components B and C.
