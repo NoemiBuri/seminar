@@ -54,11 +54,13 @@ As a next step the distance from point SPA to the triangle corner A is calculate
 
 The calculations are perfomed consistent with the formulas shown in section 3.
 ### 4. Plot
-In the final step of the script the mixing triangle is plotted as shown in *Figure 3*. To achieve a clear overview, only the calculation of the component A is visualized. If you wish you can easily add the visualisation of the other components by adding phb, phc, SPB and SPC to the plot.
+In the final step of the script the mixing triangle is plotted as shown in *Figure 3*. To achieve a clear overview, only the calculation of the component A is visualized. If you wish you can easily add the visualisation of the other components by adding phb, phc, SPB and SPC to the plot. Please be aware that the display of the mixing triangle is not normed. Hence the angles are not shown realistically.
 ## apply function
 To apply the function "emma" you can use following code:
+
 a = emma(Ax, Ay, Bx, By, Cx, Cy, Px, Py)
-Therefore, you have to specify yout data. For each of the three components a two-dimensional vector is created. For the component A you are asked to indicate the elements Ax and Ay of the vector A. The same information for the components B and C is asked. This data sets the corners of the mixing triangle. Furthermore the data of the investigated sample P for which the mixing calculation is done, needs to be declared. In *Figure 1* you can see a visualization of this step of the project.
+
+Therefore, you have to specify your data. For each of the three components a two-dimensional vector is created. For the component A you are asked to indicate the elements Ax and Ay of the vector A. The same information for the components B and C is asked. This data sets the corners of the mixing triangle. Furthermore the data of the investigated sample P for which the mixing calculation is done, needs to be declared. In *Figure 1* you can see a visualization of the data you insert at this point.
 
 ![Screenshot](components.png)
 
