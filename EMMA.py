@@ -148,9 +148,3 @@ def emma(Ax, Ay, Bx, By, Cx, Cy, Px, Py):
     ax1.grid(color='grey', linestyle='-', linewidth=0.25, alpha=0.8)
 
     return z, k, q
-
-##################################################
-# read data from user
-##################################################
-# specify Ax, Ay, Bx, By, Cx, Cy, Px, Py
-a = emma(Ax, Ay, Bx, By, Cx, Cy, Px, Py)
