@@ -75,4 +75,4 @@ The calculations are perfomed consistent with the formulas shown in section 3.
 ### 5. Plot
 In the final step of the script the mixing triangle is plotted as shown in *Figure 3*. To achieve a clear overview, only the calculation of the component A is visualized. If you wish you can easily add the visualisation of the other components by adding phb, phc, SPB and SPC to the plot.
 ## Output
-As output of the script you get the visualized mixing triangle as shown in *Figure 3*. Here you can check if your investigated sample (point P) lies within the mixing triangle. If this is not the case, you cannot perform the EMMA. If P lies within the triangle, the percentages of the components A, B and C you get are the result of your EMMA.
+As output of the script you get the visualized mixing triangle as shown in *Figure 3*. Here you can check if your investigated sample (point P) lies within the mixing triangle. If this is not the case, you cannot perform the EMMA. If P lies within the triangle, the percentages of the components A, B and C you get are the result of your EMMA. 
