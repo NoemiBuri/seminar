@@ -40,11 +40,11 @@ In this section the mixing triangle is defined. Therefore, the vector direction 
 
 To calculate the vector direction of the triangle sides the following formula is used:
 
-![Screenshot](vector_dir.JPG)
+![Screenshot](vector_direction.JPG)
 
 To calculate the vector magnitude the following formula is used:
 
-![Screenshot](vector_amount.JPG)
+![Screenshot](vector_magnitude.JPG)
 
 To calculate the triangle side magnitude the following formula is used:
 
