@@ -23,7 +23,7 @@ As next the mixing triangle gets defined. Therefore, the vector direction and ma
 
 ![Screenshot](define_t.png)
 
-*Figure 2 : triangle side phaA and point pha*
+*Figure 2 : triangle side ha and point pha*
 
 To calculate the vector direction of the triangle sides the following formula is used:
 
